@@ -29,6 +29,30 @@ a {
     font-family: Public Sans, sans-serif;
 }
 
+.section-title {
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.15;
+    color: #fff;
+}
+
+.section-heading {
+    font-family: Poppins, sans-serif;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.22;
+    color: #fff;
+}
+
+.section-desc {
+    color: #c0c0c0;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -137,9 +161,7 @@ a {
     margin-top: 20px;
     width: 341px;
     font-size: 1.8rem;
-    font-weight: 500;
     line-height: 1.56;
-    color: #c0c0c0;
 }
 
 .hero__action {
@@ -220,7 +242,7 @@ a {
     width: var(--width-blur);
     height: var(--width-blur);
     border-radius: 340px;
-    background: #fbc331;
+    background: var(--primary-color);
     filter: blur(137px);
     z-index: -1;
 }
@@ -235,3 +257,72 @@ a {
     margin-top: 77px;
 }
 
+/* ===== About Us ===== */
+.about {
+    margin-top: 140px;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    background: #1e2029;
+    border-radius: 20px;
+}
+
+/* About Left */
+.about__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__img {
+    width: 75%;
+}
+
+/* About Right */
+.about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about__title {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.about__title::before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: #fff;
+    z-index: 1;
+}
+
+.about__heading {
+    position: relative;
+    margin-top: 23px;
+    width: 266px;
+}
+
+.about__heading::after {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    content: "";
+    width: 380px;
+    height: 1px;
+    background: #fff;
+}
+
+.about__heading-decor {
+    color: var(--primary-color);
+}
+
+.about__desc {
+    margin-top: 50px;
+    width: 450px;
+}
