@@ -84,12 +84,44 @@
                         </li>
                     </ul>
 
+                    <!-- nav tablet/mobile -->
+                    <a href="#!" class="navbar__icon-mobile">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="1em"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </a>
+
                     <!-- Action -->
                     <div class="navbar-act">
                         <a href="#!" class="btn navbar-act__download">
                             Download
                         </a>
                     </div>
+
+                    <!-- Download icon -->
+                    <a
+                        href="#!"
+                        class="btn-download__icon navbar__download-icon"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="16"
+                            width="14"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"
+                            />
+                        </svg>
+                    </a>
                 </nav>
             </div>
         </header>
@@ -98,12 +130,12 @@
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
-                    <div class="row row-cols-2">
+                    <div class="row row-cols-lg-2 row-cols-1 reverse-col">
                         <!-- Left -->
-                        <div>
+                        <div class="hero__left">
                             <div class="hero__content">
                                 <h1 class="hero__heading">
-                                    Slide
+                                    Slice
                                     <span class="hero__heading-decor"
                                         >It Up</span
                                     >
@@ -171,7 +203,7 @@
             <section class="about">
                 <div class="container">
                     <div class="about__inner">
-                        <div class="row row-cols-2">
+                        <div class="row row-cols-lg-2 row-cols-1">
                             <!-- Image -->
                             <div class="about__image">
                                 <img
@@ -224,7 +256,7 @@
                     </div>
 
                     <!-- Bottom -->
-                    <div class="row row-cols-2">
+                    <div class="row row-cols-lg-2 row-cols-1">
                         <!-- left -->
                         <div class="feature__botom-left">
                             <div class="feature__content">
@@ -324,15 +356,17 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="intro__box-video">
-                            <video
-                                preload=""
-                                controls
-                                playsinline
-                                poster="./assets/video/thumb_video.png"
-                                class="intro__video"
-                                src="./assets/video/_intro.mp4"
-                            ></video>
+                        <div class="intro__video-wrap">
+                            <div class="intro__box-video">
+                                <video
+                                    preload=""
+                                    controls
+                                    playsinline
+                                    poster="./assets/video/thumb_video.png"
+                                    class="intro__video"
+                                    src="./assets/video/_intro.mp4"
+                                ></video>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -355,7 +389,7 @@
                     </div>
 
                     <!-- Review List -->
-                    <div class="row row-cols-3 review-no-wrap">
+                    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
                         <!-- review 1 -->
                         <div>
                             <div class="review__item">
@@ -405,7 +439,9 @@
                                     />
                                 </div>
                                 <p class="review__cmt">
-                                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                                    It is a long established fact that a reader
+                                    will be distracted by the readable content
+                                    of a page when
                                 </p>
                                 <div class="review__info">
                                     <img
@@ -424,7 +460,7 @@
                         </div>
 
                         <!-- review 2 -->
-                        <div>
+                        <div class="none-mobile">
                             <div class="review__item">
                                 <div class="review__decor">
                                     <svg
@@ -472,7 +508,8 @@
                                     />
                                 </div>
                                 <p class="review__cmt">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry.
                                 </p>
                                 <div class="review__info">
                                     <img
@@ -491,7 +528,7 @@
                         </div>
 
                         <!-- review 3 -->
-                        <div>
+                        <div class="none-tablet">
                             <div class="review__item">
                                 <div class="review__decor">
                                     <svg
@@ -539,7 +576,8 @@
                                     />
                                 </div>
                                 <p class="review__cmt">
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s
                                 </p>
                                 <div class="review__info">
                                     <img
@@ -563,42 +601,36 @@
             <!-- Download -->
             <section class="download">
                 <div class="container">
-                    <div class="row row-cols-2">
-                        <!-- left -->
-                        <div class="col-7">
-                            <div class="download__content">
-                                <h2 class="download__heading">
-                                    Download the app now
-                                </h2>
-                                <p class="download__desc">
-                                    Want to unlock even more features to make
-                                    your photos shine? With PixelPro, you'll get
-                                    access to useful features like Batch Editor,
-                                    HD quality, Smart Resize, and more.
-                                </p>
-                                <div class="download__app">
-                                    <img
-                                        src="./assets/img/App Store.png"
-                                        alt=""
-                                        class="download__app-img"
-                                    />
-                                    <img
-                                        src="./assets/img/Google Play.png"
-                                        alt=""
-                                        class="download__app-img"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Right -->
-                        <div class="col-5">
-                            <div class="download__image">
+                    <div class="download__inner">
+                        <div class="download__content">
+                            <h2 class="download__heading">
+                                Download the app now
+                            </h2>
+                            <p class="download__desc">
+                                Want to unlock even more features to make your
+                                photos shine? With PixelPro, you'll get access
+                                to useful features like Batch Editor, HD
+                                quality, Smart Resize, and more.
+                            </p>
+                            <div class="download__app">
                                 <img
-                                    src="./assets/img/phone.png"
+                                    src="./assets/img/App Store.png"
                                     alt=""
-                                    class="download__img"
+                                    class="download__app-img"
+                                />
+                                <img
+                                    src="./assets/img/Google Play.png"
+                                    alt=""
+                                    class="download__app-img"
                                 />
                             </div>
+                        </div>
+                        <div class="download__media">
+                            <img
+                                src="./assets/img/phone.png"
+                                alt=""
+                                class="download__media-img"
+                            />
                         </div>
                     </div>
                 </div>
@@ -608,69 +640,87 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
+                    <!-- Left -->
                     <div class="footer__left">
-                        <p class="footer-cta">Sign up for our newsletter</p>
-                        <form action="" class="search-form">
-                            <input
-                                type="email"
-                                name=""
-                                id=""
-                                placeholder="Enter your email"
-                                class="search-form__input"
-                            />
-                            <button type="submit" class="search-form__submit">
+                        <div class="footer__left-warp">
+                            <p class="footer-cta">Sign up for our newsletter</p>
+                            <form action="" class="search-form">
+                                <input
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    placeholder="Enter your email"
+                                    class="search-form__input"
+                                />
+                                <button
+                                    type="submit"
+                                    class="search-form__submit"
+                                >
+                                    <svg
+                                        width="28"
+                                        height="18"
+                                        viewBox="0 0 28 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 9H27M27 9L18.3333 1M27 9L18.3333 17"
+                                            stroke="#C4C4C4"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="footer-bottom__list">
+                            <div class="social-list">
+                                <a href="#!" class="social-item">
+                                    <img
+                                        src="./assets/icons/facebook.svg"
+                                        alt=""
+                                        class=" "
+                                    />
+                                </a>
+                                <a href="#!" class="social-item">
+                                    <img
+                                        src="./assets/icons/instagram.svg"
+                                        alt=""
+                                        class="social-item__img"
+                                    />
+                                </a>
+                                <a href="#!" class="social-item">
+                                    <img
+                                        src="./assets/icons/twitter.svg"
+                                        alt=""
+                                        class="social-item__img"
+                                    />
+                                </a>
+                            </div>
+                            <!-- Footer toggle -->
+                            <a href="#!" class="footer-toggle">
                                 <svg
-                                    width="28"
-                                    height="18"
-                                    viewBox="0 0 28 18"
-                                    fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
+                                    height="1em"
+                                    viewBox="0 0 448 512"
                                 >
                                     <path
-                                        d="M1 9H27M27 9L18.3333 1M27 9L18.3333 17"
-                                        stroke="#C4C4C4"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
+                                        fill="currentColor"
+                                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
                                     />
                                 </svg>
-                            </button>
-                        </form>
-                        <div class="social-list">
-                            <a href="#!" class="social-item">
-                                <img
-                                    src="./assets/icons/facebook.svg"
-                                    alt=""
-                                    class=" "
-                                />
-                            </a>
-                            <a href="#!" class="social-item">
-                                <img
-                                    src="./assets/icons/instagram.svg"
-                                    alt=""
-                                    class="social-item__img"
-                                />
-                            </a>
-                            <a href="#!" class="social-item">
-                                <img
-                                    src="./assets/icons/twitter.svg"
-                                    alt=""
-                                    class="social-item__img"
-                                />
                             </a>
                         </div>
                     </div>
+                    <!-- Right -->
                     <div class="footer__right">
                         <!-- col 1 -->
                         <section class="footer-col">
-                            <h3 class="footer__heading">
-                                Pages
-                            </h3>
+                            <h3 class="footer__heading">Pages</h3>
                             <ul class="footer__list">
                                 <li>
-                                    <a href="#!" class="footer__link">
-                                        Home
-                                    </a>
+                                    <a href="#!" class="footer__link"> Home </a>
                                 </li>
                                 <li>
                                     <a href="#!" class="footer__link">
@@ -678,9 +728,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" class="footer__link">
-                                        Blog
-                                    </a>
+                                    <a href="#!" class="footer__link"> Blog </a>
                                 </li>
                                 <li>
                                     <a href="#!" class="footer__link">
@@ -692,14 +740,10 @@
 
                         <!-- col 2 -->
                         <section class="footer-col">
-                            <h3 class="footer__heading">
-                                Product
-                            </h3>
+                            <h3 class="footer__heading">Product</h3>
                             <ul class="footer__list">
                                 <li>
-                                    <a href="#!" class="footer__link">
-                                        Home
-                                    </a>
+                                    <a href="#!" class="footer__link"> Home </a>
                                 </li>
                                 <li>
                                     <a href="#!" class="footer__link">
@@ -707,9 +751,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" class="footer__link">
-                                        Blog
-                                    </a>
+                                    <a href="#!" class="footer__link"> Blog </a>
                                 </li>
                                 <li>
                                     <a href="#!" class="footer__link">
@@ -721,9 +763,7 @@
 
                         <!-- col 3 -->
                         <section class="footer-col">
-                            <h3 class="footer__heading">
-                                Overview
-                            </h3>
+                            <h3 class="footer__heading">Overview</h3>
                             <ul class="footer__list">
                                 <li>
                                     <a href="#!" class="footer__link">
@@ -750,14 +790,10 @@
 
                         <!-- col 4 -->
                         <section class="footer-col">
-                            <h3 class="footer__heading">
-                                About us
-                            </h3>
+                            <h3 class="footer__heading">About us</h3>
                             <ul class="footer__list">
                                 <li>
-                                    <a href="#!" class="footer__link">
-                                        Team
-                                    </a>
+                                    <a href="#!" class="footer__link"> Team </a>
                                 </li>
                                 <li>
                                     <a href="#!" class="footer__link">
@@ -765,9 +801,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#!" class="footer__link">
-                                        Blog
-                                    </a>
+                                    <a href="#!" class="footer__link"> Blog </a>
                                 </li>
                                 <li>
                                     <a href="#!" class="footer__link">
