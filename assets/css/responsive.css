@@ -15,6 +15,10 @@
 
 /* 992px -> 1199px */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .about__desc {
+        width: 379px;
+    }
+
     .download__content {
         padding: 70px 20px 50px 50px;
     }
