@@ -6,12 +6,14 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: Poppins, sans-serif;
     font-size: 1.6em;
     background: #12141d;
+    scroll-behavior: smooth;
 }
 
 /* ===== COMMON ===== */
@@ -70,6 +72,21 @@ a {
 }
 
 /* ===== HEADER ===== */
+.header {
+    z-index: 1;
+    background: #12141d;
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+}
+
+.navbar-color {
+    background-color: orange;
+    width: 100px;
+}
+
 .navbar {
     position: relative;
     display: flex;
@@ -116,6 +133,9 @@ a {
 }
 
 .navbar__link-active {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
     position: relative;
     color: #ffffff;
     opacity: 1;
@@ -271,7 +291,7 @@ a {
 
 /* ===== About Us ===== */
 .about {
-    margin-top: 140px;
+    padding-top: 140px;
 }
 
 .about__inner {
@@ -706,7 +726,7 @@ a {
     content: "";
     width: 100%;
     height: 83%;
-    background: #FFFAE3;
+    background: #fffae3;
     border-radius: 0 20px 20px 0;
     z-index: -1;
 }

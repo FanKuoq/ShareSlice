@@ -48,14 +48,40 @@
 
         <!-- Responsive -->
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!--  -->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+        <!-- <script>
+            jQuery(function ($) {
+                var $navbar = $(".fixed");
+                $(window).scroll(function (event) {
+                    var $current = $(this).scrollTop();
+                    if ($current > 0) {
+                        $navbar.addClass(".navbar-color");
+                    } else {
+                        $navbar.removeClass(".navbar-color");
+                    }
+                });
+            });
+        </script> -->
+
+        <script>
+            $(function () {
+                $(".navbar__link").click(function () {
+                    $(".navbar__link").removeClass('navbar__link-active');
+                    $(this).addClass("navbar__link-active");
+                });
+            });
+        </script>
     </head>
     <body>
         <!-- HEADER -->
-        <header class="header">
+        <header class="header fixed">
             <div class="container">
                 <nav class="navbar">
                     <!-- Logo -->
-                    <a href="#!" class="logo">
+                    <a href="#" class="logo">
                         <img
                             src="./assets/img/Logo.svg"
                             alt="Share Slice"
@@ -66,21 +92,19 @@
                     <!-- navigation -->
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a
-                                href="#home"
-                                class="navbar__link navbar__link-active"
-                            >
-                                Home
-                            </a>
+                            <a href="#" class="navbar__link navbar__link-active"> Home </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> About </a>
+                            <a href="#about-id" class="navbar__link"> About </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> Review </a>
+                            <a href="#feature-id" class="navbar__link"> Feature </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#!" class="navbar__link"> Contact </a>
+                            <a href="#review-id" class="navbar__link"> Review </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#download-id" class="navbar__link"> Download </a>
                         </li>
                     </ul>
 
@@ -100,8 +124,8 @@
 
                     <!-- Action -->
                     <div class="navbar-act">
-                        <a href="#!" class="btn navbar-act__download">
-                            Download
+                        <a href="#contact-id" class="btn navbar-act__download">
+                            Contact
                         </a>
                     </div>
 
@@ -130,7 +154,7 @@
             <!-- Hero -->
             <section class="hero">
                 <div class="container">
-                    <div class="row row-cols-lg-2 row-cols-1 reverse-col">
+                    <div class="row row-cols-lg-2 row-cols-1">
                         <!-- Left -->
                         <div class="hero__left">
                             <div class="hero__content">
@@ -200,7 +224,7 @@
             </section>
 
             <!-- About Us -->
-            <section class="about">
+            <section class="about" id="about-id">
                 <div class="container">
                     <div class="about__inner">
                         <div class="row row-cols-lg-2 row-cols-1">
@@ -239,7 +263,7 @@
             </section>
 
             <!-- Feature -->
-            <section class="feature">
+            <section class="feature" id="feature-id">
                 <div class="container">
                     <!-- Top -->
                     <div class="row row-cols-1 feature__top">
@@ -373,7 +397,7 @@
             </section>
 
             <!-- Review -->
-            <section class="review">
+            <section class="review" id="review-id">
                 <div class="container">
                     <h2 class="section-heading review__heading">Our Reviews</h2>
                     <div class="review__nav">
@@ -599,7 +623,7 @@
             </section>
 
             <!-- Download -->
-            <section class="download">
+            <section class="download" id="download-id">
                 <div class="container">
                     <div class="download__inner">
                         <div class="download__content">
@@ -637,7 +661,7 @@
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="footer">
+        <footer class="footer" id="contact-id">
             <div class="container">
                 <div class="footer__inner">
                     <!-- Left -->
