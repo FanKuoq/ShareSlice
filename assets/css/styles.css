@@ -281,7 +281,9 @@ a {
 }
 
 .hero__media-img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
     border-radius: 110px;
     background: #c4c4c4;
 }
@@ -291,6 +293,39 @@ a {
 }
 
 /* ===== About Us ===== */
+@-webkit-keyframes xoayvong {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+}
+/* Standard syntax */
+@keyframes xoayvong {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+}
+
+.about__img {
+    animation: xoayvong 5s linear 0s infinite;
+    -webkit-animation: xoayvong 5s linear 0s infinite;
+    -moz-animation: xoayvong 5s linear 0s infinite;
+    -o-animation: xoayvong 5s linear 0s infinite;
+}
+
 .about {
     padding-top: 140px;
 }
@@ -730,7 +765,7 @@ a {
 
 .download__desc {
     margin-top: 13px;
-    max-width: 470px;
+    max-width: 400px;
     font-size: 1.4rem;
     line-height: 1.56;
     color: #484848;

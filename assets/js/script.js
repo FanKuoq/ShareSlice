@@ -35,22 +35,3 @@ $(document).ready(function () {
         arrows: false,
     });
 });
-
-// $(function () {
-//     $(".navbar__link").click(function () {
-//         $(".navbar__link").removeClass('navbar__link-active');
-//         $(this).addClass("navbar__link-active");
-//     });
-// });
-
-// jQuery(function ($) {
-//     var $navbar = $(".fixed");
-//     $(window).scroll(function (event) {
-//         var $current = $(this).scrollTop();
-//         if ($current > 0) {
-//             $navbar.addClass(".navbar-color");
-//         } else {
-//             $navbar.removeClass(".navbar-color");
-//         }
-//     });
-// });

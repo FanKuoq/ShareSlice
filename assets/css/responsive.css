@@ -23,6 +23,10 @@
         margin-top: 60px;
     }
 
+    .review__cmt {
+        height: 120px;
+    }
+
     .download__content {
         padding: 70px 20px 50px 50px;
     }
@@ -160,6 +164,10 @@
 
     .feature__btn {
         margin-top: 350px;
+    }
+
+    .review__cmt {
+        height: 120px;
     }
 
     .footer__inner {
@@ -415,6 +423,10 @@
 
     .download__heading {
         font-size: 4.2rem;
+    }
+
+    .download__desc {
+        max-width: 350px;
     }
 
     .footer__inner {
