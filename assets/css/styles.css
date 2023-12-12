@@ -281,9 +281,7 @@ a {
 }
 
 .hero__media-img {
-    height: 100%;
     width: 100%;
-    object-fit: cover;
     border-radius: 110px;
     background: #c4c4c4;
 }
