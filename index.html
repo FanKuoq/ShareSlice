@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Share Slice | viết thêm gì đó....</title>
 
         <!-- Favicon -->
         <link
@@ -43,6 +42,13 @@
             href="./assets/fonts/font_Public_Sans/stylesheet.css"
         />
 
+        <!-- CSS Slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+          />
+
         <!-- Style CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
 
@@ -52,28 +58,9 @@
         <!--  -->
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-        <!-- <script>
-            jQuery(function ($) {
-                var $navbar = $(".fixed");
-                $(window).scroll(function (event) {
-                    var $current = $(this).scrollTop();
-                    if ($current > 0) {
-                        $navbar.addClass(".navbar-color");
-                    } else {
-                        $navbar.removeClass(".navbar-color");
-                    }
-                });
-            });
-        </script> -->
+        <!--  -->
 
-        <script>
-            $(function () {
-                $(".navbar__link").click(function () {
-                    $(".navbar__link").removeClass('navbar__link-active');
-                    $(this).addClass("navbar__link-active");
-                });
-            });
-        </script>
+        <title>Share Slice | viết thêm gì đó....</title>
     </head>
     <body>
         <!-- HEADER -->
@@ -92,19 +79,30 @@
                     <!-- navigation -->
                     <ul class="navbar__list">
                         <li class="navbar__item">
-                            <a href="#" class="navbar__link navbar__link-active"> Home </a>
+                            <a
+                                href="#home-id"
+                                class="navbar__link navbar__link-active"
+                            >
+                                Home
+                            </a>
                         </li>
                         <li class="navbar__item">
                             <a href="#about-id" class="navbar__link"> About </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#feature-id" class="navbar__link"> Feature </a>
+                            <a href="#feature-id" class="navbar__link">
+                                Feature
+                            </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#review-id" class="navbar__link"> Review </a>
+                            <a href="#review-id" class="navbar__link">
+                                Review
+                            </a>
                         </li>
                         <li class="navbar__item">
-                            <a href="#download-id" class="navbar__link"> Download </a>
+                            <a href="#download-id" class="navbar__link">
+                                Download
+                            </a>
                         </li>
                     </ul>
 
@@ -152,7 +150,7 @@
         <!-- MAIN -->
         <main>
             <!-- Hero -->
-            <section class="hero">
+            <section class="section hero" id="home-id">
                 <div class="container">
                     <div class="row row-cols-lg-2 row-cols-1">
                         <!-- Left -->
@@ -174,7 +172,9 @@
                                     friends, and family.
                                 </p>
                                 <div class="hero__action">
-                                    <a href="#!" class="btn hero__action-btn"
+                                    <a
+                                        href="#download-id"
+                                        class="btn hero__action-btn"
                                         >Download</a
                                     >
                                     <div class="hero-play">
@@ -183,14 +183,20 @@
                                             alt=""
                                             class="hero-play__decor"
                                         />
-                                        <a href="#!" class="hero-play__icon">
+                                        <a
+                                            href="#play-id"
+                                            class="hero-play__icon"
+                                        >
                                             <img
                                                 src="./assets/icons/play_icon.svg"
                                                 alt=""
                                                 class="hero-play__img"
                                             />
                                         </a>
-                                        <a href="#!" class="hero-play__title">
+                                        <a
+                                            href="#play-id"
+                                            class="hero-play__title"
+                                        >
                                             Watch Video
                                         </a>
                                     </div>
@@ -224,7 +230,7 @@
             </section>
 
             <!-- About Us -->
-            <section class="about" id="about-id">
+            <section class="section about" id="about-id">
                 <div class="container">
                     <div class="about__inner">
                         <div class="row row-cols-lg-2 row-cols-1">
@@ -263,7 +269,7 @@
             </section>
 
             <!-- Feature -->
-            <section class="feature" id="feature-id">
+            <section class="section feature" id="feature-id">
                 <div class="container">
                     <!-- Top -->
                     <div class="row row-cols-1 feature__top">
@@ -286,34 +292,61 @@
                             <div class="feature__content">
                                 <ul class="feature__list">
                                     <li class="feature__item">
-                                        <a href="#!" class="feature__link">
-                                            Founder
+                                        <a
+                                            href="#!"
+                                            class="feature__link feature__link-active"
+                                        >
+                                            Calculate
                                         </a>
+                                        <div class="feature__content-frame">
+                                            <h3
+                                                class="feature__content-heading"
+                                            >
+                                                Calculation Profile
+                                            </h3>
+                                            <p class="feature__content-desc">
+                                                Keep track with your previous
+                                                hang-out costs while maintaining
+                                                the calculation for each
+                                                individuals’ profile.
+                                            </p>
+                                        </div>
                                     </li>
                                     <li class="feature__item">
                                         <a href="#!" class="feature__link">
-                                            Blogger
+                                            Tracking
                                         </a>
+                                        <div class="feature__content-frame">
+                                            <h3
+                                                class="feature__content-heading"
+                                            >
+                                                Balance Tracking
+                                            </h3>
+                                            <p class="feature__content-desc">
+                                                Inform you and your relatives
+                                                about the balance people been
+                                                missing with over time.
+                                            </p>
+                                        </div>
                                     </li>
                                     <li class="feature__item">
                                         <a href="#!" class="feature__link">
-                                            Marketer
+                                            Bank Link
                                         </a>
-                                    </li>
-                                    <li class="feature__item">
-                                        <a href="#!" class="feature__link">
-                                            Agency
-                                        </a>
+                                        <div class="feature__content-frame">
+                                            <h3
+                                                class="feature__content-heading"
+                                            >
+                                                Bank Link
+                                            </h3>
+                                            <p class="feature__content-desc">
+                                                We provide service with banking
+                                                account with fast transaction
+                                                between user profile.
+                                            </p>
+                                        </div>
                                     </li>
                                 </ul>
-                                <h3 class="feature__content-heading">
-                                    Calculation Profile
-                                </h3>
-                                <p class="feature__content-desc">
-                                    Keep track with your previous hang-out costs
-                                    while maintaining the calculation for each
-                                    individuals’ profile.
-                                </p>
                                 <a href="#!" class="btn feature__btn">
                                     <span class="feature__btn-title"
                                         >Explore Platform</span
@@ -335,11 +368,27 @@
                         <!-- right -->
                         <div class="feature__botom-right">
                             <div class="feature__media">
-                                <img
-                                    src="./assets/img/card.png"
+                                <div>
+                                    <img
+                                    src="./assets/img/feature-1.png"
                                     alt=""
                                     class="feature__media-card"
                                 />
+                                </div>
+                                <div>
+                                    <img
+                                        src="./assets/img/feature-2.png"
+                                        alt=""
+                                        class="feature__media-card"
+                                    />
+                                </div>
+                                <div>
+                                    <img
+                                        src="./assets/img/feature-3.png"
+                                        alt=""
+                                        class="feature__media-card"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -347,12 +396,12 @@
             </section>
 
             <!-- Intro Video -->
-            <section class="intro">
+            <section class="intro" id="play-id">
                 <div class="container">
                     <div class="row row-cols-1">
                         <div class="intro__header">
                             <h2 class="section-heading intro__heading">
-                                A quick glance of our projects
+                                A quick glance of our project
                             </h2>
                             <div class="intro__right">
                                 <p class="section-desc intro__desc">
@@ -397,7 +446,7 @@
             </section>
 
             <!-- Review -->
-            <section class="review" id="review-id">
+            <section class="section review" id="review-id">
                 <div class="container">
                     <h2 class="section-heading review__heading">Our Reviews</h2>
                     <div class="review__nav">
@@ -623,7 +672,7 @@
             </section>
 
             <!-- Download -->
-            <section class="download" id="download-id">
+            <section class="section download" id="download-id">
                 <div class="container">
                     <div class="download__inner">
                         <div class="download__content">
@@ -661,7 +710,7 @@
             </section>
         </main>
         <!-- FOOTER -->
-        <footer class="footer" id="contact-id">
+        <footer class="section footer" id="contact-id">
             <div class="container">
                 <div class="footer__inner">
                     <!-- Left -->
@@ -839,5 +888,20 @@
                 <div class="footer__line"></div>
             </div>
         </footer>
+        
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script defer src="./assets/js/script.js"></script>
     </body>
 </html>
